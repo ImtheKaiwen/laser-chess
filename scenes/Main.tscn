@@ -1,0 +1,493 @@
+[gd_scene format=3 uid="uid://cha2cx4gfgjl1"]
+
+[ext_resource type="Script" uid="uid://co5licbuvrnuu" path="res://scripts/main.gd" id="1_0bbpv"]
+[ext_resource type="Texture2D" uid="uid://bwjcmiaqk18x" path="res://assets/board/black_tile.png" id="2_rarhs"]
+[ext_resource type="Texture2D" uid="uid://x0xta8ogy33v" path="res://assets/board/white_tile.png" id="3_vcsgt"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rarhs"]
+bg_color = Color(0.3530626, 0.35306263, 0.35306257, 1)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0bbpv"]
+texture = ExtResource("2_rarhs")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rarhs"]
+texture = ExtResource("3_vcsgt")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_vcsgt"]
+sources/0 = SubResource("TileSetAtlasSource_0bbpv")
+sources/1 = SubResource("TileSetAtlasSource_rarhs")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jlsqs"]
+bg_color = Color(0.9542096, 0.95420974, 0.9542095, 1)
+corner_radius_top_left = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cvmbd"]
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0bbpv"]
+bg_color = Color(0, 0, 0, 0.7058824)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vcsgt"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_c01mt"]
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nxtc6"]
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q8u5g"]
+bg_color = Color(0.3254902, 0.7882353, 0.17254902, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lhr70"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wp0k4"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bjd11"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qmy6f"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mwfav"]
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3p2gp"]
+bg_color = Color(1, 0.27398866, 0.21327004, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nfivy"]
+bg_color = Color(0.780616, 0.20652959, 0.20781434, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1nqs0"]
+bg_color = Color(0.6, 0.6, 0.6, 0.7058824)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1iba3"]
+bg_color = Color(0.927618, 0.3349264, 0.31644124, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+
+[node name="Main" type="Node2D" unique_id=2036228493]
+script = ExtResource("1_0bbpv")
+
+[node name="Board" type="Node2D" parent="." unique_id=2029357176]
+
+[node name="Background" type="Panel" parent="Board" unique_id=193916759]
+visible = false
+offset_left = -159.0
+offset_top = -88.0
+offset_right = 159.0
+offset_bottom = 88.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_rarhs")
+metadata/_edit_use_anchors_ = true
+
+[node name="TileMap" type="TileMap" parent="Board" unique_id=1298604725]
+position = Vector2(-80, -80)
+tile_set = SubResource("TileSet_vcsgt")
+format = 2
+layer_0/tile_data = PackedInt32Array(0, 131072, 0, 65537, 131072, 0, 2, 131072, 0, 65539, 131072, 0, 4, 131072, 0, 65541, 131072, 0, 6, 131072, 0, 65543, 131072, 0, 131078, 131072, 0, 196615, 131072, 0, 262150, 131072, 0, 327687, 131072, 0, 393222, 131072, 0, 458759, 131072, 0, 458757, 131072, 0, 393220, 131072, 0, 458755, 131072, 0, 393218, 131072, 0, 458753, 131072, 0, 393216, 131072, 0, 327681, 131072, 0, 262144, 131072, 0, 196609, 131072, 0, 131072, 131072, 0, 131074, 131072, 0, 196611, 131072, 0, 131076, 131072, 0, 196613, 131072, 0, 262148, 131072, 0, 327683, 131072, 0, 327685, 131072, 0, 262146, 131072, 0, 458752, 1, 2, 393217, 1, 2, 458754, 1, 2, 393219, 1, 2, 458756, 1, 2, 393221, 1, 2, 458758, 1, 2, 393223, 1, 2, 327686, 1, 2, 262151, 1, 2, 262149, 1, 2, 327684, 1, 2, 262147, 1, 2, 327682, 1, 2, 196610, 1, 2, 262145, 1, 2, 327680, 1, 2, 196612, 1, 2, 131077, 1, 2, 65542, 1, 2, 5, 1, 2, 65540, 1, 2, 7, 1, 2, 131079, 1, 2, 196614, 1, 2, 131075, 1, 2, 3, 1, 2, 65538, 1, 2, 131073, 1, 2, 196608, 1, 2, 65536, 1, 2, 1, 1, 2, 8, 196608, 1, 65545, 196608, 1, 131080, 196608, 1, 196617, 196608, 1, 262152, 196608, 1, 327689, 196608, 1, 393224, 196608, 1, 458761, 196608, 1, 458760, 1, 1, 393225, 1, 1, 327688, 1, 1, 262153, 1, 1, 196616, 1, 1, 131081, 1, 1, 65544, 1, 1, 9, 1, 1, 524289, 1, 1, 589824, 1, 1, 589826, 1, 1, 524291, 1, 1, 589828, 1, 1, 524293, 1, 1, 589830, 1, 1, 524295, 1, 1, 589832, 1, 1, 524297, 1, 1, 524288, 65536, 2, 589825, 65536, 2, 524290, 65536, 2, 589827, 65536, 2, 524292, 65536, 2, 589829, 65536, 2, 524294, 65536, 2, 589831, 65536, 2, 524296, 65536, 2, 589833, 65536, 2)
+
+[node name="LaserLine" type="Line2D" parent="Board/TileMap" unique_id=1420400045]
+position = Vector2(64, 64)
+width = 0.4
+default_color = Color(0.9764706, 0, 0, 1)
+
+[node name="Pieces" type="Node2D" parent="." unique_id=1051501078]
+
+[node name="LaserLayer" type="Node2D" parent="." unique_id=701009456]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1017872542]
+visible = false
+zoom = Vector2(4, 4)
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=1424821884]
+
+[node name="InventoryBackgorund" type="Panel" parent="UI" unique_id=1881913488]
+visible = false
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -276.0
+offset_top = -246.0
+offset_bottom = 121.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_jlsqs")
+
+[node name="TurnPanel" type="Panel" parent="UI" unique_id=1520284531]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -173.75
+offset_right = 173.75
+offset_bottom = 95.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_cvmbd")
+
+[node name="TurnLabel" type="Label" parent="UI/TurnPanel" unique_id=848649440]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+text = "Mavi takım sırası"
+
+[node name="GameOverPanel" type="Panel" parent="UI" unique_id=826286547]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_0bbpv")
+
+[node name="Panel" type="Panel" parent="UI/GameOverPanel" unique_id=887255439]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -287.0
+offset_top = -162.0
+offset_right = 287.0
+offset_bottom = 162.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_vcsgt")
+
+[node name="WinnerLabel" type="Label" parent="UI/GameOverPanel" unique_id=1309137831]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -236.0
+offset_top = -51.0
+offset_right = 236.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "Kazanan : Mavi"
+
+[node name="RestartButton" type="Button" parent="UI/GameOverPanel" unique_id=646813768]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -88.0
+offset_top = 51.0
+offset_right = 85.0
+offset_bottom = 118.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_c01mt")
+theme_override_styles/hover = SubResource("StyleBoxFlat_nxtc6")
+text = "Tekrar oyna"
+
+[node name="ActionPanel" type="VBoxContainer" parent="UI" unique_id=793385570]
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -259.0
+offset_top = -234.0
+offset_right = -15.0
+offset_bottom = 187.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_constants/separation = 7
+
+[node name="BtnFinishSetup" type="Button" parent="UI/ActionPanel" unique_id=1053804681]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_q8u5g")
+text = "Finish Setup"
+
+[node name="StatusLabel" type="Label" parent="UI/ActionPanel" unique_id=1403722808]
+visible = false
+layout_mode = 2
+
+[node name="Control" type="Control" parent="UI/ActionPanel" unique_id=1772459358]
+layout_mode = 2
+
+[node name="PreviewBox" type="Panel" parent="UI/ActionPanel" unique_id=2017361760]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_lhr70")
+
+[node name="PreviewRect" type="TextureRect" parent="UI/ActionPanel/PreviewBox" unique_id=1182135911]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -33.0
+offset_top = -25.0
+offset_right = 70.0
+offset_bottom = -25.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(32, 32)
+stretch_mode = 1
+
+[node name="InventoryKutusu" type="VBoxContainer" parent="UI/ActionPanel" unique_id=19606377]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="BtnSplitterCard" type="Button" parent="UI/ActionPanel/InventoryKutusu" unique_id=1270310897]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_wp0k4")
+text = "splitter"
+
+[node name="BtnMirrorCard" type="Button" parent="UI/ActionPanel/InventoryKutusu" unique_id=1537729038]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_bjd11")
+text = "mirror"
+
+[node name="BtnBlockerCard" type="Button" parent="UI/ActionPanel/InventoryKutusu" unique_id=1945160248]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_qmy6f")
+text = "blocker"
+
+[node name="BtnKingCard" type="Button" parent="UI/ActionPanel/InventoryKutusu" unique_id=1308579262]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_bjd11")
+text = "mirror"
+
+[node name="BtnLaserCard" type="Button" parent="UI/ActionPanel/InventoryKutusu" unique_id=1859134154]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_bjd11")
+text = "mirror"
+
+[node name="ControlKutusu" type="HBoxContainer" parent="UI/ActionPanel" unique_id=1301423249]
+layout_mode = 2
+
+[node name="BtnRotatePre" type="Button" parent="UI/ActionPanel/ControlKutusu" unique_id=2147021740]
+custom_minimum_size = Vector2(120, 70)
+layout_mode = 2
+size_flags_horizontal = 8
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_mwfav")
+text = "rotate pre"
+
+[node name="BtnCancel" type="Button" parent="UI/ActionPanel/ControlKutusu" unique_id=1999801240]
+custom_minimum_size = Vector2(120, 70)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_3p2gp")
+text = "cancel"
+
+[node name="TurnBannerController" type="Control" parent="UI" unique_id=536226186]
+visible = false
+layout_mode = 3
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 310.0
+offset_bottom = 410.0
+grow_horizontal = 2
+mouse_filter = 2
+
+[node name="BannerBackground" type="ColorRect" parent="UI/TurnBannerController" unique_id=1532311962]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.12941177, 0.12941177, 0.12941177, 0.7058824)
+metadata/_edit_use_anchors_ = true
+
+[node name="BannerLabel" type="Label" parent="UI/TurnBannerController" unique_id=1393493646]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+text = "sıra sende"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="APContainer" type="HBoxContainer" parent="UI" unique_id=222788990]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -45.0
+offset_top = -83.0
+offset_right = 45.0
+offset_bottom = -43.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 10
+
+[node name="AP_1" type="ColorRect" parent="UI/APContainer" unique_id=1184933071]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+
+[node name="AP_2" type="ColorRect" parent="UI/APContainer" unique_id=1177829417]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+
+[node name="NotificationArea" type="VBoxContainer" parent="UI" unique_id=1838629515]
+offset_left = 19.0
+offset_top = 16.0
+offset_right = 59.0
+offset_bottom = 56.0
+mouse_filter = 2
+theme_override_constants/separation = 10
+
+[node name="ExitButton" type="Button" parent="UI" unique_id=1825410290]
+custom_minimum_size = Vector2(70, 70)
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -70.0
+offset_right = 141.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_nfivy")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_1nqs0")
+theme_override_styles/hover = SubResource("StyleBoxFlat_1iba3")
+text = "Exit"
+
+[connection signal="pressed" from="UI/ExitButton" to="." method="_on_exit_button_pressed"]

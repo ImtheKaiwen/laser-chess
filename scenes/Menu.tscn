@@ -1,0 +1,128 @@
+[gd_scene format=3 uid="uid://c6e2ul0k1p835"]
+
+[ext_resource type="Script" uid="uid://cu8pxe2gjntht" path="res://scripts/menu.gd" id="1_xdvgc"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lumdm"]
+bg_color = Color(0.8776157, 0.8776158, 0.8776157, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_11y2r"]
+bg_color = Color(0.780616, 0.20652959, 0.20781434, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_b6cxs"]
+bg_color = Color(0.6, 0.6, 0.6, 0.7058824)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o0tnf"]
+bg_color = Color(0.927618, 0.3349264, 0.31644124, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xdvgc"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+shadow_color = Color(0.00039445335, 0.00039445335, 0.00039445335, 0.6)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jmdev"]
+bg_color = Color(0.6, 0.6, 0.6, 0.7058824)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_upctu"]
+bg_color = Color(0.218061, 0.21806106, 0.21806088, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_right = 16
+corner_radius_bottom_left = 16
+
+[node name="Menu" type="Node2D" unique_id=502538662]
+script = ExtResource("1_xdvgc")
+
+[node name="Menu" type="CanvasLayer" parent="." unique_id=1126003410]
+
+[node name="Background" type="Panel" parent="Menu" unique_id=844814189]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_lumdm")
+
+[node name="LogoName" type="Label" parent="Menu" unique_id=1459688189]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -141.0
+offset_top = -108.0
+offset_right = 144.0
+offset_bottom = -39.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "Laser Chess"
+
+[node name="ExitButton" type="Button" parent="Menu" unique_id=12875110]
+custom_minimum_size = Vector2(70, 70)
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -70.0
+offset_right = 141.0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_11y2r")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_b6cxs")
+theme_override_styles/hover = SubResource("StyleBoxFlat_o0tnf")
+text = "Exit"
+
+[node name="MenuButtons" type="VBoxContainer" parent="Menu" unique_id=1245537775]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -162.0
+offset_top = 21.0
+offset_right = 162.0
+offset_bottom = 228.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 10
+
+[node name="PlayButton" type="Button" parent="Menu/MenuButtons" unique_id=1206955500]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_xdvgc")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jmdev")
+theme_override_styles/hover = SubResource("StyleBoxFlat_upctu")
+text = "Play"
+
+[node name="InfoButton" type="Button" parent="Menu/MenuButtons" unique_id=754643840]
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_xdvgc")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jmdev")
+theme_override_styles/hover = SubResource("StyleBoxFlat_upctu")
+text = "Info
+"
+
+[connection signal="pressed" from="Menu/ExitButton" to="." method="_on_exit_button_pressed"]
+[connection signal="pressed" from="Menu/MenuButtons/PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="Menu/MenuButtons/InfoButton" to="." method="_on_info_button_pressed"]

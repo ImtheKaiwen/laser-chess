@@ -1,0 +1,90 @@
+[gd_scene format=3 uid="uid://b3hhred3h03da"]
+
+[ext_resource type="Script" uid="uid://c4elxyxgh575p" path="res://scripts/info.gd" id="1_6h2d6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_txknx"]
+bg_color = Color(0.07762881, 0.07762883, 0.07762877, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6h2d6"]
+bg_color = Color(0.92273736, 0.9227374, 0.92273736, 1)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_left = 16
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jfmby"]
+bg_color = Color(0.6, 0.6, 0.6, 0.7058824)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_left = 16
+
+[node name="Info" type="Node2D" unique_id=1294652219]
+script = ExtResource("1_6h2d6")
+
+[node name="InfoMenu" type="CanvasLayer" parent="." unique_id=1405034538]
+
+[node name="Background" type="Panel" parent="InfoMenu" unique_id=1466591695]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_txknx")
+
+[node name="Description" type="RichTextLabel" parent="InfoMenu" unique_id=1948873590]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -574.5
+offset_top = -260.5
+offset_right = 574.5
+offset_bottom = 260.5
+grow_horizontal = 2
+grow_vertical = 2
+bbcode_enabled = true
+text = "[center][b][font_size=24][color=yellow]⚡ LAZER STRATEJİ: OYUN KURALLARI ⚡[/color][/font_size][/b][/center]
+
+[b][color=aqua]1. OYUNUN AMACI VE KAZANMA ŞARTLARI[/color][/b]
+Oyunda iki farklı şekilde galip gelebilirsin:
+• [b][color=lime]Şah Mat:[/color][/b] Rakip [b][color=gold]KRAL[/color][/b]'ı ölümcül bir lazerle vurmak.
+• [b][color=lime]Hükmen Galibiyet (Aynasız Bırakma):[/color][/b] Rakibin sahadaki ve envanterindeki TÜM aynalarını çalarak onu hamlesiz bırakmak!
+
+[b][color=aqua]2. HAMLE PUANI (AP) SİSTEMİ[/color][/b]
+Her oyuncunun tur başına [b]2 Hamle Puanı (AP)[/b] vardır:
+• Sahadaki taşı 1 kare [b]Yürütmek[/b]: 1 AP
+• Sahadaki taşı olduğu yerde 90 derece [b]Döndürmek[/b]: 1 AP
+• Envanterden sahaya yeni bir [b]Kart (Taş) Koymak[/b]: 2 AP (Tüm turu bitirir)
+
+[b][color=aqua]3. ÖLÜMCÜL LAZER VE DOST ATEŞİ ⚠️[/color][/b]
+Lazer kaynağından ilk çıktığında tamamen [i]ZARARSIZDIR[/i]. Bir taşa direkt çarparsa hasar vermez.
+Lazerin ölümcül olması için bir Aynadan veya Ayrıştırıcıdan [b]SEKMESİ[/b] şarttır. 
+[i][color=red]DİKKAT:[/color][/i] Sekmiş (şarj olmuş) bir lazer takım dinlemez; kendi taşına çarparsa onu da yok eder!
+
+[b][color=aqua]4. TAŞLAR VE ÖZEL YETENEKLERİ[/color][/b]
+• [b][color=red]Lazer Kulesi:[/color][/b] Sadece oyuncuya yakın olan kendi satırında sağa-sola kayabilir, ileri gidemez.
+• [b][color=gold]Kral (King):[/color][/b] Ön cephesinde yansıtıcı bir kalkanı vardır ve buradan gelen lazeri 180 derece geri yansıtır. Ancak yanlardan veya arkadan vurulursa oyun biter.
+• [b][color=silver]Ayna (Mirror):[/color][/b] Lazer parlak yüzüne gelirse 90 derece seker. [b][color=orange]Ganimet Kuralı:[/color][/b] Ayna mat (arka) yüzeyinden vurulursa patlamaz, vurulan takımın envanterine geçer!
+• [b][color=fuchsia]Ayrıştırıcı (Splitter):[/color][/b] Işını hem 90 derece yansıtır hem de içinden düz geçirir. Sadece atak amaçlıdır.
+• [b][color=gray]Blocker:[/color][/b] Gelen ışını tamamen durdurur, yok olmaz. En güçlü savunma taşıdır.
+
+[i][color=orange]Kurulum İpucu: Setup aşamasında sağ tıklayarak kendi taşlarını envantere geri alabilirsin![/color][/i]"
+
+[node name="CloseButton" type="Button" parent="InfoMenu" unique_id=1602332584]
+custom_minimum_size = Vector2(120, 50)
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -8.0
+offset_top = -8.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 22
+theme_override_styles/normal = SubResource("StyleBoxFlat_6h2d6")
+theme_override_styles/hover = SubResource("StyleBoxFlat_jfmby")
+text = "Close"
+
+[connection signal="pressed" from="InfoMenu/CloseButton" to="." method="_on_close_button_pressed"]
